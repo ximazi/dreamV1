@@ -1,0 +1,24 @@
+{% extends '__base__.html' %}
+
+{% block title %}日志{% endblock %}
+
+{% block beforehead %}
+
+<script>
+</script>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="uk-width-medium-3-4">
+    
+    {% for task in tasks %}
+        <p>{{ task }}</p>
+    {% endfor %}
+    </div>
+
+
+
+
+{% endblock %}
